@@ -1,3 +1,5 @@
+import resumePdf from '../assets/resume.pdf'
+
 function Resume() {
   const experience = [
     {
@@ -52,9 +54,9 @@ function Resume() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Luke Stegmayer</h1>
           <p className="text-gray-500 mb-4">
             Portland, Oregon |{' '}
@@ -71,7 +73,8 @@ function Resume() {
             I'm a software engineer with experience across the full stack, particularly React and Next.js for frontends and Java on backend, as well as iOS app development.
           </p>
           <a
-            href="#"
+            href={resumePdf}
+            download="Luke_Stegmayer_Resume.pdf"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Download PDF
@@ -79,11 +82,11 @@ function Resume() {
         </div>
 
         {/* Experience Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-blue-600">
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-blue-600">
             Experience
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-5">
             {experience.map((job) => (
               <div key={job.id} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
@@ -108,11 +111,11 @@ function Resume() {
         </section>
 
         {/* Education Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-blue-600">
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-blue-600">
             Education
           </h2>
-          <div className="space-y-6">
+          <div className="space-y-4">
             {education.map((edu) => (
               <div key={edu.id} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start">
@@ -134,7 +137,7 @@ function Resume() {
 
         {/* Skills Section */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-blue-600">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-blue-600">
             Skills
           </h2>
           <div className="bg-white p-6 rounded-lg shadow-md">
