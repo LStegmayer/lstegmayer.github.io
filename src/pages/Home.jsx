@@ -53,7 +53,8 @@ function Home() {
                 development the traditional way, I've embraced coding agents now, too.
               </p>
               <p className="text-gray-600">
-                I hope you see something here that interests you!
+                This website is still under construction, with a projects section coming soon, 
+                but in the meantime I hope you see something here that interests you!
               </p>
             </div>
           </div>
